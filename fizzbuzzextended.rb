@@ -16,13 +16,15 @@ class Fizzbuzz
     (1..nums).each do |i|
       match = false
       numbers_avail.each do |k, v|
-        if i % k == 0 && match == false
+        if i % k == 0
           match = true
-          put v
+          print v
         end
       end
       if !match
         puts i
+      else
+        puts "\n"
       end
     end
   end
